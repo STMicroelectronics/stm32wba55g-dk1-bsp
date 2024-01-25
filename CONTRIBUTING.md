@@ -13,7 +13,7 @@ Please check the following points before posting an issue:
 
 ### 1.2 Posting the issue
 
-When you have checked the previous points, create a new report from the **Issues** tab of this repository. A template is available [here](issues/new) to help you report the issue you are facing or the enhancement you would like to propose.
+When you have checked the previous points, create a new report from the **Issues** tab of this repository. A template is available [here](../../issues/new/choose) to help you report the issue you are facing or the enhancement you would like to propose.
 
 ## 2. Pull Requests
 
