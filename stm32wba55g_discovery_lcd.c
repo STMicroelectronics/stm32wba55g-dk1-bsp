@@ -43,6 +43,7 @@
      o Draw an horizontal line using the BSP_LCD_DrawHLine() function.
      o Draw a vertical line using the BSP_LCD_DrawVLine() function.
      o Draw a bitmap image using the BSP_LCD_DrawBitmap() function.
+       -  Raw Data of bitmap image generated in vertical mode.
      o Shift a bitmap image using the BSP_LCD_ShiftBitmap() function.
 
   + Display on LCD
@@ -668,6 +669,7 @@ int32_t  BSP_LCD_SetCursor(uint32_t Instance, uint32_t Xpos, uint32_t Ypos)
 
 /**
   * @brief  Draws a bitmap picture loaded in the internal Flash in currently active layer.
+  * @note   Raw Data of bitmap image generated in vertical mode
   * @param  Instance LCD Instance
   * @param  Xpos Bmp X position in the LCD
   * @param  Ypos Bmp Y position in the LCD

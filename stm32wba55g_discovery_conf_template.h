@@ -37,6 +37,8 @@ extern "C" {
 #define USE_COM_LOG                          0U
 
 /* IRQ priorities (Default is 15 as lowest priority level) */
+#define BSP_JOY_IT_PRIORITY                 0U
+
 #define BSP_AUDIO_OUT_IT_PRIORITY           14U
 #define BSP_AUDIO_IN_IT_PRIORITY            15U
 

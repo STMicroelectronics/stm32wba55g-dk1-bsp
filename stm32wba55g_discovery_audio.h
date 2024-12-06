@@ -240,7 +240,7 @@ typedef struct
 /* Line in input from 3.5 audio jack connector */
 #define AUDIO_IN_DEVICE_LINE_IN           0x01U
 
-/* MP34DT01TR digital microphone */
+/* MP23DB01HPTR digital microphone */
 #define AUDIO_IN_DEVICE_DIGITAL_MIC       0x02U
 
 /* Audio in states */

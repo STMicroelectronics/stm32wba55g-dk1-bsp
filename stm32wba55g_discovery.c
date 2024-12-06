@@ -50,6 +50,13 @@
 #endif
 
 #define JOY_ADC_POLL_TIMEOUT 1000
+
+/* Keep compatibility with previous BSP versions :
+   - if Joystick IRQ priority is not defined in stm32wba55g_discovery_conf.h file,
+     it is locally defined */
+#if !defined(BSP_JOY_IT_PRIORITY)
+#define BSP_JOY_IT_PRIORITY 0U
+#endif
 /**
   * @}
   */
@@ -989,7 +996,7 @@ static void ADC_MspInit(ADC_HandleTypeDef *hadc)
   HAL_GPIO_Init(JOY1_CHANNEL_GPIO_PORT, &GPIO_Init);
 
   /* ADC4 interrupt Init */
-  HAL_NVIC_SetPriority(ADC4_IRQn, 0, 0);
+  HAL_NVIC_SetPriority(ADC4_IRQn, BSP_JOY_IT_PRIORITY, 0);
   HAL_NVIC_EnableIRQ(ADC4_IRQn);
 }
 
