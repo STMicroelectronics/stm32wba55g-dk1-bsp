@@ -1439,7 +1439,7 @@ __weak HAL_StatusTypeDef MX_SAI1_Init(SAI_HandleTypeDef *hsai, MX_SAI_Config_t *
 
     /* Configure SAI1_Block_X Slot */
     hsai->SlotInit.FirstBitOffset     = 0;
-    if (MXInit->DataSize == AUDIO_RESOLUTION_24B)
+    if (MXInit->DataSize == SAI_DATASIZE_24)
     {
       hsai->SlotInit.SlotSize         = SAI_SLOTSIZE_32B;
     }
