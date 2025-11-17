@@ -70,17 +70,17 @@
   * @{
   */
 
-/** @addtogroup STM32WBA55G
+/** @addtogroup STM32WBA55G_DK1
   * @{
   */
 
-/** @defgroup STM32WBA55G_LCD STM32WBA55G LCD
+/** @defgroup STM32WBA55G_DK1_LCD LCD
   * @brief      This file includes the LCD driver of
   *             STM32WBA55G boards.
   * @{
   */
 
-/** @defgroup STM32WBA55G_LCD_Private_Constants Private Constants
+/** @defgroup STM32WBA55G_DK1_LCD_Private_Constants LCD Private Constants
   * @{
   */
 
@@ -103,7 +103,7 @@ const LCD_UTILS_Drv_t LCD_Driver =
   * @}
   */
 
-/** @defgroup STM32WBA55G_LCD_Private_Macros Private Macros
+/** @defgroup STM32WBA55G_DK1_LCD_Private_Macros LCD Private Macros
   * @{
   */
 #define POLY_X(Z)               ((int32_t)((Points + (Z))->X))
@@ -113,7 +113,7 @@ const LCD_UTILS_Drv_t LCD_Driver =
   * @}
   */
 
-/** @defgroup STM32WBA55G_LCD_Exported_Variables Exported Variables
+/** @defgroup STM32WBA55G_DK1_LCD_Exported_Variables LCD Exported Variables
   * @{
   */
 void                 *LcdCompObj = NULL;
@@ -122,7 +122,7 @@ BSP_LCD_Ctx_t        LcdCtx[LCD_INSTANCES_NBR];
   * @}
   */
 
-/** @defgroup STM32WBA55G_LCD_Private_Variables Private Variables
+/** @defgroup STM32WBA55G_DK1_LCD_Private_Variables LCD Private Variables
   * @{
   */
 static SSD1315_Drv_t     *LcdDrv = NULL;
@@ -130,7 +130,7 @@ static SSD1315_Drv_t     *LcdDrv = NULL;
   * @}
   */
 
-/** STM32WBA55G_LCD_Private_FunctionPrototypes Private Functions
+/** STM32WBA55G_DK1_LCD_Private_FunctionPrototypes LCD Private Functions
   */
 /*******************************************************************************
  ********************************* LINK LCD ***********************************/
@@ -145,7 +145,7 @@ static int32_t SSD1315_Probe(uint32_t Orientation);
 /**
   */
 
-/** @addtogroup STM32WBA55G_LCD_Exported_Functions
+/** @addtogroup STM32WBA55G_DK1_LCD_Exported_Functions
   * @{
   */
 /**
@@ -1052,7 +1052,7 @@ int32_t BSP_LCD_ReadReg(uint16_t Reg, uint8_t *pData, uint16_t Length)
   * @}
   */
 
-/** @defgroup STM32WBA55G_LCD_Private_Functions Private Functions
+/** @defgroup STM32WBA55G_DK1_LCD_Private_Functions LCD Private Functions
   * @{
   */
 

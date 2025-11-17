@@ -163,12 +163,17 @@ typedef struct
 #define USE_STM32WBA55G_DK1
 #endif /* USE_STM32WBA55G_DK1 */
 
+/* Default LED configuration of board :                   */
+/* - revision A : LD3 on PA0 => switch to be commented    */
+/* - revision B : LD3 on PB15 => switch to be uncommented */
+#define STM32WBA55G_DK1_LD3_ON_PB15
+
 /**
   * @brief STM32WBA55G_DK1 BSP Driver version number
   */
 #define STM32WBA55G_DK1_BSP_VERSION_MAIN   (0x01U) /*!< [31:24] main version */
 #define STM32WBA55G_DK1_BSP_VERSION_SUB1   (0x00U) /*!< [23:16] sub1 version */
-#define STM32WBA55G_DK1_BSP_VERSION_SUB2   (0x02U) /*!< [15:8]  sub2 version */
+#define STM32WBA55G_DK1_BSP_VERSION_SUB2   (0x03U) /*!< [15:8]  sub2 version */
 #define STM32WBA55G_DK1_BSP_VERSION_RC     (0x00U) /*!< [7:0]  release candidate */
 #define STM32WBA55G_DK1_BSP_VERSION        ((STM32WBA55G_DK1_BSP_VERSION_MAIN << 24)\
                                             |(STM32WBA55G_DK1_BSP_VERSION_SUB1 << 16)\
